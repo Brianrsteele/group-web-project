@@ -1,0 +1,160 @@
+body {
+    background-color:whitesmoke;
+    color:#282828;
+    font-family: helvetica, ariel, sans-serif;
+    max-width: 850px;
+    margin: auto;
+    
+    
+}
+
+#example i {
+    color:crimson;
+}
+
+h3, h2, header {
+    font-family: garamond, paltino, serif;
+}
+
+nav {
+    float: left;
+    padding-top: 4.75em;
+    padding-left: 1.35em;
+    font-size: .90em;
+    margin-bottom: 2em;
+}
+
+nav li{
+    list-style: none;
+    padding: .25em 0 .25em .5em;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #686868;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: #686868;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+nav a:active {
+    color: blue;
+    
+}
+
+main {
+    float: right;
+    width: 620px;
+    min-height: 600px;
+    margin-bottom: 2em;
+    
+}
+
+main h3 {
+    padding: 1em 0;
+    font-size: 1.5em;
+}
+
+#example {
+    margin-bottom: 2em;
+    
+}
+
+#example li {
+    line-height: 2em;
+    list-style: none;
+    padding-bottom: 1em;
+    
+}
+
+#example i {
+    margin-left: 200px;;
+    height: 300px;
+    padding-top: .25em;
+}
+
+main code {
+    font-family: monospace;
+    line-height: 2em;
+    font-size: 1.25em;
+    line-height: 2em;
+    font-size: 1.25em;
+    color: crimson;
+    
+}
+
+main p:last-child {
+    padding: 0 .5em;
+    line-height: 2em;
+    font-size: 1.25em;
+    line-height: 2em;
+    font-size: 1.25em;
+    color: #181818;
+    
+    
+}
+
+footer li {
+    list-style: none;
+    font-size: .90em;
+}
+
+header {
+    background-color:#181818;
+    color: #f5f5f5;
+}
+
+header h1 {
+    color: crimson;
+    padding: .75em 1em .75em 1em;
+    font-size: 2em;
+    font-weight:bolder;
+}
+
+header h2 {
+    background-color: #686868;
+   padding: .25em 1em .25em 1.25em;
+    font-size: 1.5em; 
+}
+
+footer {
+    padding: .75em 1em 1.5em 1.75em;
+    clear: both;
+   background-color:#181818;
+    color: #f5f5f5; 
+}
+
+footer ul {
+    padding-top: .75em;
+}
+footer li{
+    list-style: none;
+    padding: .15em .75em;
+}
+
+footer a:link {
+    text-decoration: none;
+    color: #686868;
+}
+
+footer a:visited {
+    text-decoration: none;
+    color: #686868;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer a:active {
+    color: whitesmoke;
+    
+}

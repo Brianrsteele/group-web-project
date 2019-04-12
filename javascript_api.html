@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>Google Map Demo</title>
+        <link rel="stylesheet" href="_css/reset.css">
+        <link rel="stylesheet" href="_css/styles.css">
+        <style>
+            /* Always set the map height explicitly to define the size of the div
+            * element that contains the map. */
+            #example {
+                    height: 50%;
+                    width: 500px;
+            }
+            
+    </style>
+	</head>
+	<body>
+        <header>
+            <h1>Team JPEG</h1>
+            <h2>The Google Maps API</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="urls.html">Maps Urls</a></li>
+                <li><a href="static.html">Static Maps</a></li>
+                <li><a href="embedded.html">Embedded Maps</a></li>
+                <li><a href="#">Javascript API</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h3>The Javascript API</h3>
+            <p id="example">
+                
+            </p>
+            <p>
+            <code>
+                var map;
+      function initMap() { 
+        map = new google.maps.Map(document.getElementById('example'), {
+          center: {lat: 44.0474, lng: -91.6433}, 
+          zoom: 15 
+        }); 
+                
+                </code>
+            </p>
+        </main>
+        <footer>
+            <p>Team JPG:</p>
+            <ul>
+                <li><a href="mailto:BBolin17@winona.edu">Ben Bollin<a></li>
+                <li><a href="mailto:CKiefer15@winona.edu">Chase Kiefer<a></li>
+                <li><a href="mailto:APoss17@winona.edu">Andrew Poss<a></li>
+                <li><a href="mailto:brian.steele@rctc.edu">Brian Steele<a></li>
+            </ul>
+        </footer>
+	<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('example'), {
+          center: {lat: 44.0474, lng: -91.6433},
+          zoom: 15
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj11iTHwqlnbjHSagayHEgsRSYrTwPEC4&callback=initMap"
+    async defer></script>
+	</body>
+</html>
+
+
+
+
+
