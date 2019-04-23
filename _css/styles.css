@@ -16,6 +16,10 @@ h4, h3, h2, header {
     font-family: garamond, paltino, serif;
 }
 
+img {
+    margin-bottom: 2em;
+}
+
 nav {
     float: left;
     padding-top: 4.75em;
@@ -53,6 +57,7 @@ main {
     float: right;
     width: 620px;
     min-height: 600px;
+    margin-bottom: 3em;
     
     
 }
@@ -65,8 +70,8 @@ main h3 {
 main h4 {
     font-family: helvetica, ariel, sans-serif;
     font-size: 1em;
-    padding-top: 1em;
-    padding-bottom: .25em;
+    padding-top: 0em;
+    padding-bottom: 0em;
     margin-bottom: 0em;
 }
 
@@ -101,9 +106,16 @@ main code {
 main p {
     line-height: 1.75em;
     padding-top:0em;
+    padding-bottom: 1.5em;
 }
 
+#citations {
+    font-size: .75em;
+}
 
+#citations li{
+    padding: .75em;
+}
 footer li {
     list-style: none;
     font-size: .90em;
