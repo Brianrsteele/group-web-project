@@ -26,30 +26,47 @@ img {
 
 nav {
     float: left;
-    padding-top: 4.75em;
-    padding-left: 1.35em;
-    font-size: .90em;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    font-size: 1.1em;
     margin-bottom: 2em;
 }
 
 nav li{
     list-style: none;
-    padding: .25em 0 .25em .5em;
+    padding: .75em .75em .75em .25em;
+}
+
+/*
+nav li:not(:first-of-type):hover{
+    border-bottom: solid 2px #181818;
+    
+}
+*/
+
+nav #current {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav #current::after {
+    content: " >";
 }
 
 nav a:link {
     text-decoration: none;
-    color: #686868;
+    color: #181818;
 }
 
 nav a:visited {
     text-decoration: none;
-    color: #686868;
+    color: #181818;
 }
 
 nav a:hover {
     text-decoration: none;
     color: blue;
+    
 }
 
 nav a:active {
@@ -68,7 +85,8 @@ main {
 
 main h3 {
     padding: 1em 0;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 main h4 {
@@ -148,16 +166,16 @@ header {
 }
 
 header h1 {
-    color: crimson;
-    padding: .75em 1em .75em 1em;
-    font-size: 2em;
+    padding: .75em 1em .75em .25em;
+    font-size: 3em;
     font-weight:bolder;
 }
 
 header h2 {
     background-color: #686868;
-   	padding: .25em 1em .25em 1.25em;
+   	padding: .25em 1em .25em .75em;
     font-size: 1.5em; 
+    
 	
 }
 
