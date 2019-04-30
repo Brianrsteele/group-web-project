@@ -105,7 +105,7 @@
             <div class="col">
             <p>Accessability</p>
             <ul>
-                <li><a href="accessability.html">Accessability Statement</a></li>
+                <li><a href="../accessability.html">Accessability Statement</a></li>
             </ul>
             </div>    
             <div class="col"> 

@@ -1,6 +1,12 @@
 <?php
-$to = "CKiefer15@example.com, brian.steele@rctc.edu";
+$to = "chase.kiefer15@gmail.com";
 $subject = "Report of Ageism";
+
+$firstname = filter_var($_GET["firstname"], FILTER_SANITIZE_EMAIL);
+$lastname = filter_var($_GET["lastname"], FILTER_SANITIZE_EMAIL);
+$description = filter_var($_GET["description"], FILTER_SANITIZE_EMAIL);
+$pr = filter_var($_GET["pr"], FILTER_SANITIZE_EMAIL);
+
 
 $message = "
 <html>
@@ -17,10 +23,10 @@ $message = "
 <th>Person Responsible</th>
 </tr>
 <tr>
-<td>" . $_GET["firstname"] . "</td>
-<td>" . $_GET["lastname"] . "</td>
-<td>" . $_GET["description"] . "</td>
-<td>" . $_GET["pr"] . "</p>
+<td>" . $firstname . "</td>
+<td>" . $lastname . "</td>
+<td>" . $description . "</td>
+<td>" . $pr . "</p>
 </tr>
 </table>
 </body>
@@ -31,8 +37,6 @@ $message = "
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-// More headers
-$headers .= 'From: <CKiefer15@winona.edu>' . "\r\n";
-
 mail($to,$subject,$message,$headers);
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 ?>
