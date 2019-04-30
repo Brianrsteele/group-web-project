@@ -1,6 +1,5 @@
 <?php
 
-    echo `whoami`;
 
     if($_SERVER['REQUEST_METHOD'] == "GET") {
         if (isset($_GET['firstname']) && isset($_GET['lastname']) && isset($_GET['description']) && isset($_GET['pr'])) {
@@ -31,18 +30,18 @@
             $description = filter_var($description, FILTER_SANITIZE_STRING);
             //$personResponsible = filter_var($personResponsible, FILTER_SANITIZE_STRING);
             
-            $day = getdate();
+            $day = getdate()['year'] . "-" . getdate()['mon'] . "-" . getdate()['mday'];
             
             
             $payload = array($day, $firstname, $lastname, $description, $personResponsible);
             
-            $file = fopen('../../reports/reports.csv', 'w') or die('Cannot open file: ' . $file); ;
+            $file = fopen('../../reports/reports.csv', 'a') or die('Error saving report');
             
             fputcsv($file, $payload);
             
             fclose($file);
             
-            $msg = "Thank you for your report. Your information has been saved."
+            $msg = "Thank you for your report. Your information has been saved.";
             
             
         } else {
@@ -61,8 +60,8 @@
 		<title>Ageism in Technology</title>
         <meta charset="UTF-8">
         <link rel="shortcut icon" type="image/x-icon" href="http://72.14.191.56/favicon.ico">
-        <link rel="stylesheet" href="_css/reset.css">
-        <link rel="stylesheet" href="_css/styles.css">
+        <link rel="stylesheet" href="../_css/reset.css">
+        <link rel="stylesheet" href="../_css/styles.css">
         <meta name="description" content="Welcome to TeamJPG's Ageism Site.">
         <meta name="keywords" content="ageism, ageism in technlogy, signs of ageism, workplace, technology, teamjpg">
         <meta name="author" content="Brian Steele">
@@ -76,11 +75,11 @@
         <nav>
             <ul>
                 <li id="skip"><a href="#main">Skip to Main</a></li>
-                <li id="current"><a href="index.html">Home</a></li>
-                <li><a href="overview.html">Overview</a></li>
-                <li><a href="ageism_signs.html">Signs of Ageism</a></li>
-                <li><a href="calendar.html">Training Calendar</a></li>
-                <li><a href="report.html">Report</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../overview.html">Overview</a></li>
+                <li><a href="../ageism_signs.html">Signs of Ageism</a></li>
+                <li><a href="../calendar.html">Training Calendar</a></li>
+                <li><a href="../report.html">Report</a></li>
             </ul>
         </nav>
         <main id="main">
